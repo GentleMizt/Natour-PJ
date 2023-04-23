@@ -33,12 +33,16 @@ body {
   background-position: top;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
 }
 
 .logo-box{
-    
+    position: absolute;
+    top: 40px;
+    left: 40px;
 }
 
 .logo{
-
+    /* width: 50%; */
+    height: 35px;
 }
