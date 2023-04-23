@@ -64,7 +64,7 @@ body {
   font-weight: 700;
   letter-spacing: 35px;
   animation-name: moveInLeft;
-  animation-duration: ;
+  animation-duration: 5s;
 }
 
 .heading-primary-sub {
@@ -80,6 +80,10 @@ body {
     transform: translateX(-100px);
   }
 
+  80%{
+    transform: translateX(26px);
+  }
+  
   100% {
     opacity: 1;
     transform: translate(0);
