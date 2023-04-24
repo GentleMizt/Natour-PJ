@@ -107,6 +107,6 @@ body {
   }
 }
 
-.btn:link{
+.btn:link, .btn:visited{
 
 }
