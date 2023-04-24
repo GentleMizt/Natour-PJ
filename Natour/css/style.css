@@ -135,7 +135,6 @@ body {
 }
 
 .btn::after{
-  border: 1px solid red;
   content: '';
   display: inline-block;
   height: 100%;
@@ -145,13 +144,15 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: all .4s;
 }
 
 .btn-white::after{
   background-color: #fff;
-  background-color: blue;
 }
 
 .btn:hover::after{
-  transform: scale();
+  transform: scaleX(1.4);
+  transform: scaleY(1.6);
+  opacity: 0;
 }
