@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/GentleMizt/Natour-PJ/issues"
   },
-  "homepage": "https://github.com/GentleMizt/Natour-PJ#readme"
+  "homepage": "https://github.com/GentleMizt/Natour-PJ#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
 }
+
