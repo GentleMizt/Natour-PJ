@@ -149,7 +149,10 @@ body {
     text-align: center; }
 
 .row {
-  max-width: 114rem; }
+  max-width: 114rem;
+  border: 1px solid red;
+  margin: 0 auto;
+  margin-bottom: 8rem; }
 
 .section-about {
   background-color: #f7f7f7;

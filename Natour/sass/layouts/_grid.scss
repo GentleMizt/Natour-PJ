@@ -1,4 +1,6 @@
 .row{
-    max-width: 114rem;
-    // border: 1px solid red;
+    max-width: $grid-width;
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-bottom: $gutter-vertical;
 }
