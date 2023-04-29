@@ -151,8 +151,9 @@ body {
 .row {
   max-width: 114rem;
   border: 1px solid red;
-  margin: 0 auto;
-  margin-bottom: 8rem; }
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
 
 .section-about {
   background-color: #f7f7f7;

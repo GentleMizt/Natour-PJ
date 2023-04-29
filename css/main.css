@@ -178,6 +178,8 @@ body {
   max-width: 114rem;
   border: 1px solid red;
   margin: 0 auto;
+}
+.row:not(:last-child) {
   margin-bottom: 8rem;
 }
 
