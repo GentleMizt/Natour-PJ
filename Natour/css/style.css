@@ -160,26 +160,7 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   transform: translate(0); }
 
-.header {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  position: relative; }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__text-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-
+@im @import 'layouts/header';
 .row {
   max-width: 114rem;
   margin: 0 auto; }
