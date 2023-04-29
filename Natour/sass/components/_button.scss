@@ -8,7 +8,7 @@
       padding: 1.5rem 4rem;
       transition: all 0.2s;
       position: relative;
-      font-size: 1.3rem;
+      font-size: $small-font-size;
     }
     
     &:hover {
@@ -57,7 +57,7 @@
 
 .btn-text{
   &:link,&:visited{
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     color: $color-pry;
     display: inline-block;
     text-decoration: none;
@@ -66,10 +66,15 @@
   }
 
   &:hover{
-    
+    background-color: $color-pry;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-2px);
+    transition: all .2s;
   }
 
   &:active{
-
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    transform: translate(0);
   }
 }
