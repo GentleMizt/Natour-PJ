@@ -1,4 +1,5 @@
 .card{
+    // FUNCTIONALITY OF THE CARD
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -48,5 +49,23 @@
 
     &:hover &__side--back{
         transform: rotateY(0);
+    }
+
+    // FRONT SIDE STYLING OF THE CARD
+    &__picture{
+        background-size: cover;
+
+
+        &--1{
+            background-image: url(../img/nat-5.jpg);
+        }
+
+        &--2{
+            background-image: url(../img/nat-5.jpg);
+        }
+
+        &--3{
+            background-image: url(../img/nat-5.jpg);
+        }
     }
 }
