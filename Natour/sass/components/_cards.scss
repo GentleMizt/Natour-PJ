@@ -22,7 +22,6 @@
     }
 
     &--back {
-      background-color: green;
       transform: rotateY(180deg);
 
       &-1 {
@@ -121,16 +120,16 @@
     &--2 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-sec-light, 0.85),
-        rgba($color-sec-dark, 0.85)
+        rgba($color-pry-light, 0.85),
+        rgba($color-pry-dark, 0.85)
       );
     }
 
     &--3 {
       background-image: linear-gradient(
         to right bottom,
-        rgba($color-sec-light, 0.85),
-        rgba($color-sec-dark, 0.85)
+        rgba($color-tert-light, 0.85),
+        rgba($color-tert-dark, 0.85)
       );
     }
   }
