@@ -125,6 +125,12 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--green {
+  background-color: #fff;
+  color: #777; }
+  .btn--green::after {
+    background-color: #fff; }
+
 .btn::after {
   content: "";
   display: inline-block;
