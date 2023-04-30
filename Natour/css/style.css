@@ -206,11 +206,14 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem;
-  background-color: orangered;
-  height: 50rem;
-  transition: all .8s; }
-  .card:hover {
+  -moz-perspective: 150rem; }
+  .card__side {
+    background-color: orangered;
+    color: white;
+    font-size: 2rem;
+    height: 50rem;
+    transition: all .8s; }
+  .card:hover .card__side {
     transform: rotateY(180deg);
     background-color: blue; }
 
