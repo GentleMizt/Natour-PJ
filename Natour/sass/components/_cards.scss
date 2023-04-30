@@ -133,6 +133,21 @@
 
     // BACK SIDE STYLING OF THE CARD
     &__cta{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__price-box{
+
+    }
+
+    &__price-only{
+        
+    }
+
+    &__price-value{
         
     }
 }
