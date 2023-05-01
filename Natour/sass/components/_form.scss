@@ -52,12 +52,24 @@
     }
 
     &__radio-group{
-        width: 50%;
+        width: 49%;
         display: inline-block;
     }
 
     &__radio-label{
         font-size: $default-font-size;
         cursor: pointer;
+    }
+
+    &__radio-button{
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-pry;
+        border-radius: 50%;
+        display: block;
+
+        &::after{
+
+        }
     }
 }
