@@ -26,6 +26,10 @@
             border-bottom: 3px solid $color-pry;
         }
 
+        &:focus:invalid{
+            border-bottom: 3px solid $color-sec-dark;
+        }
+
         &::-webkit-input-placeholder{
             color: $color-grey-dark-2;
         }
