@@ -9,7 +9,14 @@
     }
 
     &__background{
-
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient($color-pry-light, $color-pry-dark);
+        z-index: 10000;
     }
 
     &__nav{
