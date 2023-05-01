@@ -375,6 +375,7 @@ body {
 
 .form__input {
   font-family: inherit;
+  color: inherit;
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
   border-radius: 2px;
@@ -387,6 +388,8 @@ body {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #55c57a; }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
