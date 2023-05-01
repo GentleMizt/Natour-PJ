@@ -86,6 +86,11 @@
             transform: translate(-50%, -50%);
             background-color: $color-pry;
             opacity: 0;
+            transition: opacity .2s;
         }
+    }
+
+    &__radio-input:checked + &__radio-label > &__radio-button::after{
+        opacity: 1;
     }
 }
