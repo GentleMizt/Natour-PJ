@@ -21,15 +21,6 @@
   900-1200px: tablet landscape
   1800px + big desktop
 
-*/
-
-@mixin respond-phone {
-  @media (max-width: 600px) {
-    @content;
-  }
-}
-
-/*
   $breakpoint argument choices:
   - phone
   - tab-port
