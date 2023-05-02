@@ -13,6 +13,7 @@
     right: 6rem;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
+    text-align: center;
   }
 
   &__background {
@@ -82,6 +83,7 @@
     }
   }
 
+    // FUNCTIONALITY
   &__checkbox:checked ~ &__background{
     transform: scale(90);
   }
@@ -90,4 +92,31 @@
     opacity: 1;
     width: 100%;
   }
+
+    //   ICON
+
+    &__icon{
+        position: relative;
+        &, &::before, &::after{
+            width: 3rem;
+            height: 2px;
+            background-color: $color-grey-dark-3;
+            display: inline-block;
+        }
+        
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+        }   
+
+        &::before{
+            top: -1rem;
+        }
+
+        &::after{
+            top: 1rem;
+        }
+    }
+
 }
