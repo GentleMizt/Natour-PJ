@@ -54,7 +54,7 @@
     }
   }
   @if $breakpoint == big-dektop{
-    @media (max-width: 1800px) {
+    @media (min-width: 1800px) {
       @content;
     }
   }
