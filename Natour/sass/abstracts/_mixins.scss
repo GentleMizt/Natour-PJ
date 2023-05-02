@@ -6,9 +6,19 @@
   }
 }
 
-@mixin center-vertical-horizontal{
+@mixin center-vertical-horizontal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+// MEDIA QUERY MANAGER
+
+/*
+  0-600px: phone
+  600-900px: tablet portrait
+  900-1200px: tablet landscape
+  1800px + big desktop
+
+*/
