@@ -9,8 +9,9 @@
 
     &__content{
         @include center-vertical-horizontal;
+        background-color: $color-white;
         width: 75%;
         height: 75%;
-        border: 1px solid red;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
     }
 }
