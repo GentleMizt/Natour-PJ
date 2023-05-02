@@ -5,6 +5,13 @@
   1800px + big desktop
 
 */
+/*
+  $breakpoint argument choices:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop 
+*/
 *,
 *::after,
 *::before {
@@ -17,6 +24,9 @@ html {
   @media (max-width: 600px) {
     html {
       font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 60%; } }
 
 body {
   box-sizing: border-box; }
