@@ -481,7 +481,10 @@ body {
     display: block; }
   .popup__text {
     font-size: 1.4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px s; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
