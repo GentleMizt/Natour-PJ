@@ -12,8 +12,9 @@
     top: 6rem;
     right: 6rem;
     z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color-black, .1);
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
     text-align: center;
+    cursor: pointer;
   }
 
   &__background {
@@ -25,7 +26,7 @@
     right: 6.5rem;
     background-image: radial-gradient($color-pry-light, $color-pry-dark);
     z-index: 1000;
-    transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
+    transition: transform 0.8s cubic-bezier(0.83, 0, 0.17, 1);
     // transform: scale(90);
   }
 
@@ -37,7 +38,7 @@
     z-index: 1500;
     opacity: 0;
     width: 0;
-    transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
   &__list {
@@ -54,7 +55,7 @@
   &__link {
     &:link,
     &:visited {
-        display: inline-block;
+      display: inline-block;
       padding: 1rem 2rem;
       background-size: 220%;
       text-decoration: none;
@@ -68,55 +69,69 @@
         transparent 50%,
         $color-white 50%
       );
-      transition: all .4s;
+      transition: all 0.4s;
 
-      span{
+      span {
         display: inline-block;
         margin-right: 1.5rem;
       }
     }
 
-    &:hover, &:active{
-        background-position: 100%;
-        color: $color-pry;
-        transform: translateX(1rem);
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-pry;
+      transform: translateX(1rem);
     }
   }
 
-    // FUNCTIONALITY
-  &__checkbox:checked ~ &__background{
+  // FUNCTIONALITY
+  &__checkbox:checked ~ &__background {
     transform: scale(90);
   }
 
-  &__checkbox:checked ~ &__nav{
+  &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
   }
 
-    //   ICON
+  //   ICON
 
-    &__icon{
-        position: relative;
-        &, &::before, &::after{
-            width: 3rem;
-            height: 2px;
-            background-color: $color-grey-dark-3;
-            display: inline-block;
-        }
-        
-        &::before, &::after{
-            content: '';
-            position: absolute;
-            left: 0;
-        }   
+  &__icon {
+    position: relative;
+    margin-top: 3.3rem;
 
-        &::before{
-            top: -1rem;
-        }
-
-        &::after{
-            top: 1rem;
-        }
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-grey-dark-3;
+      display: inline-block;
+      transition: all .2s;
     }
 
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -.8rem;
+    }
+
+    &::after {
+      top: .8rem;
+    }
+  }
+
+  &__button:hover &__icon::before{
+    top: -1rem;
+  }
+
+  &__button:hover &__icon::after{
+    top: 1rem;
+  }
 }
