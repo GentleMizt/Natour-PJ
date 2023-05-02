@@ -11,21 +11,22 @@
         @include center-vertical-horizontal;
         background-color: $color-white;
         width: 75%;
-        height: 75%;
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: $default-bor-radius;
     }
 
     &__left{
-        
+        width: 33.3333%;
     }
 
     &__right{
+        width: 66.6667%;
 
     }
 
     &__img{
-
+        width: 100%;
+        display: block;
     }
 
     &__text{
