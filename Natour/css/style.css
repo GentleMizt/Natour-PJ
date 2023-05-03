@@ -121,6 +121,13 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 75em) {
+    .heading-tertiary {
+      font-size: 1.4rem; } }
+  @media (max-width: 56em) {
+    .heading-tertiary {
+      font-size: 1.1rem;
+      font-weight: 800; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -596,14 +603,27 @@ body {
   .popup__left {
     width: 33.3333%;
     display: table-cell; }
+    @media (max-width: 75em) {
+      .popup__left {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid blue; } }
   .popup__right {
     width: 66.6667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 75em) {
+      .popup__right {
+        width: 100%;
+        display: block; } }
   .popup__img {
     width: 100%;
     display: block; }
+    @media (max-width: 75em) {
+      .popup__img {
+        width: 50%; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -617,6 +637,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 75em) {
+      .popup__text {
+        font-size: 1.3rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
