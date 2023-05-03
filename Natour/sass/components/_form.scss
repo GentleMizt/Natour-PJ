@@ -64,7 +64,8 @@
         font-size: $default-font-size;
         cursor: pointer;
         position: relative;
-        padding-left: 4rem;
+        // padding-left: 4rem;
+        border: 1px solid red;
     }
 
     &__radio-button{
