@@ -124,10 +124,6 @@ body {
   @media (max-width: 75em) {
     .heading-tertiary {
       font-size: 1.4rem; } }
-  @media (max-width: 56em) {
-    .heading-tertiary {
-      font-size: 1.1rem;
-      font-weight: 800; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -607,8 +603,7 @@ body {
       .popup__left {
         width: 100%;
         display: flex;
-        justify-content: space-between;
-        border: 1px solid blue; } }
+        justify-content: space-between; } }
   .popup__right {
     width: 66.6667%;
     display: table-cell;
@@ -639,7 +634,9 @@ body {
     hyphens: auto; }
     @media (max-width: 75em) {
       .popup__text {
-        font-size: 1.3rem; } }
+        font-size: 1.2rem;
+        -moz-column-gap: 2rem;
+        column-gap: 2rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }

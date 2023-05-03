@@ -75,10 +75,6 @@ body {
   @include respond(tab-land){
     font-size: 1.4rem;
   }
-  @include respond(tab-port){
-    font-size: 1.1rem;
-    font-weight: 800;
-  }
   @include respond(tab-phone){
     font-size: 1rem;
   }

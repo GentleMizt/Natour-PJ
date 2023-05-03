@@ -32,7 +32,6 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      border: 1px solid blue;
     }  
   }
 
@@ -75,7 +74,9 @@
     hyphens: auto;
 
     @include respond(tab-land){
-      font-size: 1.3rem;
+      font-size: 1.2rem;
+      -moz-column-gap: 2rem;
+      column-gap: 2rem;
     }
   }
 
