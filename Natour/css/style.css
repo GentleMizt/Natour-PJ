@@ -500,6 +500,9 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  @media (max-width: 56em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -525,6 +528,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -533,7 +540,7 @@ body {
   font-size: 1.6rem;
   cursor: pointer;
   position: relative;
-  border: 1px solid red; }
+  padding-left: 4rem; }
 
 .form__radio-button {
   height: 3rem;
